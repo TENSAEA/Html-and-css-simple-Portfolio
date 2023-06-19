@@ -1,0 +1,307 @@
+:root{
+    --primary: #ED3833;
+    --secondary: #191C26;
+    --roboto:'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--secondary);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.main-navbar{
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.navbar-brand img{
+    width: 100px;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+.navbar-collapse{
+    flex-grow: unset !important;
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.856);
+    
+}
+
+.dropdown-item{
+    color:yellow;
+}
+
+
+.slider-image img{
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #fff;
+    transform: rotate(5deg);
+}
+
+.slider{
+    background-color: #071622;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    font-size: 25px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.job{
+    font-size: 90px;
+    font-family: var(--roboto);
+    text-align: center;
+    color: #fff;
+}
+
+.location{
+    font-size: 60px;
+    font-family: var(--roboto);
+    text-align: center;
+    color: var(--primary)
+}
+
+
+.description{
+    color: rgba(255, 255, 255, 0.733);
+    text-align: center;
+}
+
+@media(max-width:767px){
+    .job{
+        font-size: 40px !important ;
+    }
+    .location{
+        font-size: 30px !important;
+    }
+}
+
+/* about */
+
+.sm-title{
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.lg-title{
+    color: #fff;
+    font-size: 50px;
+    font-family: var(--roboto);
+}
+
+.text{
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.about-image{
+    width: 70%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.a-name{
+    color: #fff;
+    font-size: 25px;
+}
+
+.a-job{
+    color: #fff;
+    font-size: 25px;
+}
+
+.a-job span{
+    color: var(--primary);
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+table{
+    color: #fff;
+}
+
+.p-i{
+    font-family: var(--roboto);
+    color: #fff;
+
+}
+
+.iconSection{
+    display: flex;
+}
+
+.icon-text{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.c-text{
+    color: #fff;
+    font-size: 30px;
+}
+.c-text span {
+    color: var(--primary);
+   
+}
+
+.form-label{
+    color: #fff;
+}
+
+.footer{
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .footer-links {
+    display: flex;
+  }
+  
+  .footer-links a {
+    margin-right: 10px;
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #0077b5; /* LinkedIn blue color */
+  }
+  
+  .copyrigh {
+    font-size: 12px;
+  }
+  .name {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 2s steps(20, end) infinite;
+  }
+  
+  @keyframes type {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .slider-image img {
+    animation: flash 4s linear infinite;
+  }
+  
+  @keyframes flash {
+    0%, 25%, 50%, 75%, 100% {
+      opacity: 1;
+    }
+    12.5%, 37.5%, 62.5%, 87.5% {
+      opacity: 0.5;
+    }
+  }
+
+  a img {
+    transition: transform 0.5s;
+  }
+  
+  a:hover img {
+    transform: scale(1.1);
+  }
+
+  img {
+    transition: transform 0.5s;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+button {
+  animation: bounce 1s 5;
+}
+
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  button {
+    animation: bounce 2s infinite;
+  }
+
+
+  .front-end, .back-end {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 15s, opacity 15s;
+  }
+  
+  .front-end {
+    animation: fadeInUp 1s 0.5s infinite forwards;
+  }
+  
+  .back-end {
+    animation: fadeInUp 1s 1s infinite forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
