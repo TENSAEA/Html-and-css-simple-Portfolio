@@ -1,3 +1,4 @@
+<!-- This is the main HTML file for the personal portfolio website. It includes sections for navigation, home, about, experience, contact, and footer. -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,7 +16,7 @@
   </head>
   <body>
     
-    <!-- navbar -->
+    <!-- The navbar section contains the main navigation menu for the website. It includes links to the home, about, projects, and contact sections. -->
     <div  id="Up" class="row main-navbar">
         <div class="col-11 mx-auto">
             <nav class="navbar navbar-expand-lg navbar-light ">
@@ -47,9 +48,9 @@
             </nav>
         </div>
     </div>
-    <!-- /navbar -->
+    <!-- End of navbar section -->
 
-    <!-- Home -->
+    <!-- The home section serves as the landing page for the website. It includes a brief introduction and a profile picture. -->
     <div style="background-image: url(back1.jpg);" class="row slider">
         <div id="home" class="col-10 mx-auto"> 
             <div class="row">
@@ -65,9 +66,9 @@
             </div>
         </div>
     </div>
-    <!-- Home-->
+    <!-- End of home section -->
    
-    <!-- about us -->
+    <!-- The about us section provides more detailed information about the individual, including their skills, experiences, and a downloadable CV. -->
     <div style="background-image: url(/back2.jpg);" class="row aboutus mt-5">
         <div id="about" class="col-11 mx-auto" >
             <div class="row">
@@ -127,10 +128,10 @@
             </div>
         </div>
     </div>
-    <!-- /about us -->
+    <!-- End of about us section -->
     <br><br><br> <br><br><br>
 
-    <!-- experience -->
+    <!-- The experience section showcases the individual's projects or work experiences. Each project is displayed in a card format with a brief description and a link to the project. -->
     <div id="Projects" class="row slider">
         <div class="col-11 mx-auto">
             <div class="row">
@@ -150,6 +151,7 @@
                       </div>
                 </div>
                 <br><br><br>
+             <!-- This script is used to toggle the visibility of the full project description. When the "Read more" button is clicked, the full description is displayed and the button text changes to "Read less". When the "Read less" button is clicked, the full description is hidden and the button text changes back to "Read more". -->
              <script>
     function showFullMessage() 
     {
@@ -163,7 +165,7 @@
     moreText.style.display = "none";
     btnText.innerHTML = "Read more";
   } }
-             </script> 
+             </script>
 
                 <!-- card -->
                 <div class="col-md-4">
@@ -188,6 +190,7 @@
                         </div>
                       </div>
                 </div>
+                <!-- This script is similar to the previous one, but it is used for a different project description. -->
                 <script>
                     function showFullMessage1() {
    var moreText = document.getElementById("more1");
@@ -201,13 +204,13 @@
      btnText.innerHTML = "Read more";
    }
  }
-                 </script>      
+                 </script>
         </div>
     </div>
-   <!-- experience -->
+   <!-- End of experience section -->
    <br><br><br> <br><br><br>
 
-   <!-- Contact Me  -->
+   <!-- The contact me section provides a form for visitors to send a message to the individual. It also includes the individual's contact information. -->
    <div id="contact" class="row slider">
         <div class="col-11 mx-auto">
             <div class="row">
@@ -252,10 +255,10 @@
             </div>
         </div>
    </div>
-<!-- Contact Me  -->
+<!-- End of contact me section -->
 <br><br><br> <br><br><br>
 
-   <!-- Footer -->
+   <!-- The footer section includes links to the individual's LinkedIn and GitHub profiles. It also displays the copyright information. -->
    <footer >
     <div id="Bottom" class="footer-links">
      &emsp; &emsp; &emsp; <a  href="https://www.linkedin.com/in/tensae-aschalew-339368239"><button>LinkedIn</button></a>
@@ -265,6 +268,7 @@
       &copy; Your Full Name, ID Number - 2023
     </div>
   </footer>
+  <!-- This script dynamically updates the copyright year to the current year. -->
   <script>
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();

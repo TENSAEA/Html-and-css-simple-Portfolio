@@ -1,248 +1,289 @@
-:root{
-    --primary: #ED3833;
-    --secondary: #191C26;
-    --roboto:'Roboto', sans-serif;
+/* This is the main CSS file for the personal portfolio website. It includes styles for the body, navbar, home, about, experience, contact, and footer sections. It also includes styles for animations and transitions. */
+:root {
+  --primary: #ed3833;
+  --secondary: #191c26;
+  --roboto: "Roboto", sans-serif;
 }
 
-body{
-    background-color: var(--secondary);
-    height: 100vh;
-    overflow-x: hidden;
+/* The body style sets the background color, height, and overflow properties for the entire page. */
+body {
+  background-color: var(--secondary);
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-.main-navbar{
-    background-color: rgba(0, 0, 0, 0.856);
+/* The main-navbar style sets the background color for the navigation bar. */
+.main-navbar {
+  background-color: rgba(0, 0, 0, 0.856);
 }
 
-.navbar-brand img{
-    width: 100px;
+/* The navbar-brand img style sets the width for the brand image in the navigation bar. */
+.navbar-brand img {
+  width: 100px;
 }
 
-.nav-link{
-    color: #fff !important;
+/* The nav-link style sets the color for the navigation links. */
+.nav-link {
+  color: #fff !important;
 }
 
-.navbar-collapse{
-    flex-grow: unset !important;
+/* The navbar-collapse style overrides the default flex-grow property for the navigation bar. */
+.navbar-collapse {
+  flex-grow: unset !important;
 }
 
-.dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.856);
-    
+/* The dropdown-menu style sets the background color for the dropdown menu in the navigation bar. */
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.856);
 }
 
-.dropdown-item{
-    color:yellow;
+/* The dropdown-item style sets the color for the items in the dropdown menu. */
+.dropdown-item {
+  color: yellow;
 }
 
-
-.slider-image img{
-    width: 100%;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 10px solid #fff;
-    transform: rotate(5deg);
+/* The slider-image img style sets the width, border radius, overflow, border, and transform properties for the image in the slider. */
+.slider-image img {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #fff;
+  transform: rotate(5deg);
 }
 
-.slider{
-    background-color: #071622;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+/* The slider style sets the background color, height, display, and align-items properties for the slider. */
+.slider {
+  background-color: #071622;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.name{
-    font-size: 25px;
-    color: var(--primary);
-    text-align: center;
+/* The name style sets the font size, color, and text alignment for the name text. */
+.name {
+  font-size: 25px;
+  color: var(--primary);
+  text-align: center;
 }
 
-.job{
-    font-size: 90px;
-    font-family: var(--roboto);
-    text-align: center;
-    color: #fff;
+/* The job style sets the font size, font family, text alignment, and color for the job text. */
+.job {
+  font-size: 90px;
+  font-family: var(--roboto);
+  text-align: center;
+  color: #fff;
 }
 
-.location{
-    font-size: 60px;
-    font-family: var(--roboto);
-    text-align: center;
-    color: var(--primary)
+/* The location style sets the font size, font family, text alignment, and color for the location text. */
+.location {
+  font-size: 60px;
+  font-family: var(--roboto);
+  text-align: center;
+  color: var(--primary);
 }
 
-
-.description{
-    color: rgba(255, 255, 255, 0.733);
-    text-align: center;
+/* The description style sets the color and text alignment for the description text. */
+.description {
+  color: rgba(255, 255, 255, 0.733);
+  text-align: center;
 }
 
-@media(max-width:767px){
-    .job{
-        font-size: 40px !important ;
-    }
-    .location{
-        font-size: 30px !important;
-    }
+/* The media query adjusts the font size for the job and location text on screens with a maximum width of 767px. */
+@media (max-width: 767px) {
+  .job {
+    font-size: 40px !important ;
+  }
+  .location {
+    font-size: 30px !important;
+  }
 }
 
-/* about */
-
-.sm-title{
-    color: var(--primary);
-    font-size: 18px;
+/* The sm-title style sets the color and font size for the small title text in the about section. */
+.sm-title {
+  color: var(--primary);
+  font-size: 18px;
 }
 
-.lg-title{
-    color: #fff;
-    font-size: 50px;
-    font-family: var(--roboto);
+/* The lg-title style sets the color, font size, and font family for the large title text in the about section. */
+.lg-title {
+  color: #fff;
+  font-size: 50px;
+  font-family: var(--roboto);
 }
 
-.text{
-    color: rgba(255, 255, 255, 0.671);
+/* The text style sets the color for the text in the about section. */
+.text {
+  color: rgba(255, 255, 255, 0.671);
 }
 
-.about-image{
-    width: 70%;
-    border-radius: 5%;
-    overflow: hidden;
+/* The about-image style sets the width, border radius, and overflow properties for the image in the about section. */
+.about-image {
+  width: 70%;
+  border-radius: 5%;
+  overflow: hidden;
 }
 
-.a-name{
-    color: #fff;
-    font-size: 25px;
+/* The a-name style sets the color and font size for the name text in the about section. */
+.a-name {
+  color: #fff;
+  font-size: 25px;
 }
 
-.a-job{
-    color: #fff;
-    font-size: 25px;
+/* The a-job style sets the color and font size for the job text in the about section. The span within the a-job style sets the color for the span text. */
+.a-job {
+  color: #fff;
+  font-size: 25px;
 }
 
-.a-job span{
-    color: var(--primary);
+.a-job span {
+  color: var(--primary);
 }
 
-.line{
-    width: 100%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.425);
+/* The line style sets the width, height, and background color for the line in the about section. */
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.425);
 }
 
-table{
-    color: #fff;
+/* The table style sets the color for the table text in the about section. */
+.table {
+  color: #fff;
 }
 
-.p-i{
-    font-family: var(--roboto);
-    color: #fff;
-
+/* The p-i style sets the font family and color for the personal info text in the about section. */
+.p-i {
+  font-family: var(--roboto);
+  color: #fff;
 }
 
-.iconSection{
-    display: flex;
+/* The iconSection style sets the display property for the icon section in the about section. */
+.iconSection {
+  display: flex;
 }
 
-.icon-text{
-    color: #fff;
-    margin-left: 10px;
+/* The icon-text style sets the color and margin-left properties for the icon text in the about section. */
+.icon-text {
+  color: #fff;
+  margin-left: 10px;
 }
 
-.c-text{
-    color: #fff;
-    font-size: 30px;
+/* The c-text style sets the color and font size for the contact text in the contact section. The span within the c-text style sets the color for the span text. */
+.c-text {
+  color: #fff;
+  font-size: 30px;
 }
 .c-text span {
-    color: var(--primary);
-   
+  color: var(--primary);
 }
 
-.form-label{
-    color: #fff;
+/* The form-label style sets the color for the form label text in the contact section. */
+.form-label {
+  color: #fff;
 }
 
-.footer{
-    height: 50px;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    align-items: center;
+/* The footer style sets the height, width, background color, display, and align-items properties for the footer. */
+.footer {
+  height: 50px;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
 }
 
+/* The footer style sets the display, justify-content, align-items, background color, padding, font size, and color properties for the footer. */
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 10px;
-    font-size: 14px;
-    color: #444;
-  }
-  
-  .footer-links {
-    display: flex;
-  }
-  
-  .footer-links a {
-    margin-right: 10px;
-    color: #444;
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    color: #0077b5; /* LinkedIn blue color */
-  }
-  
-  .copyrigh {
-    font-size: 12px;
-  }
-  .name {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: type 2s steps(20, end) infinite;
-  }
-  
-  @keyframes type {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-size: 14px;
+  color: #444;
+}
 
-  .slider-image img {
-    animation: flash 4s linear infinite;
-  }
-  
-  @keyframes flash {
-    0%, 25%, 50%, 75%, 100% {
-      opacity: 1;
-    }
-    12.5%, 37.5%, 62.5%, 87.5% {
-      opacity: 0.5;
-    }
-  }
+/* The footer-links style sets the display property for the footer links. */
+.footer-links {
+  display: flex;
+}
 
-  a img {
-    transition: transform 0.5s;
-  }
-  
-  a:hover img {
-    transform: scale(1.1);
-  }
+/* The footer-links a style sets the margin-right, color, and text-decoration properties for the links in the footer. The footer-links a:hover style sets the color for the links in the footer when they are hovered over. */
+.footer-links a {
+  margin-right: 10px;
+  color: #444;
+  text-decoration: none;
+}
 
-  img {
-    transition: transform 0.5s;
-  }
-  
-  img:hover {
-    transform: scale(1.1);
-  }
+.footer-links a:hover {
+  color: #0077b5; /* LinkedIn blue color */
+}
 
+/* The copyrigh style sets the font size for the copyright text in the footer. */
+.copyrigh {
+  font-size: 12px;
+}
+/* The name style sets the overflow, white-space, and animation properties for the name text. The @keyframes type animation changes the width of the name text. */
+.name {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type 2s steps(20, end) infinite;
+}
 
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The slider-image img style sets the animation for the image in the slider. The @keyframes flash animation changes the opacity of the image. */
+.slider-image img {
+  animation: flash 4s linear infinite;
+}
+
+@keyframes flash {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    opacity: 0.5;
+  }
+}
+
+/* The a img style sets the transition property for the image in the link. The a:hover img style changes the transform property for the image in the link when it is hovered over. */
+a img {
+  transition: transform 0.5s;
+}
+
+a:hover img {
+  transform: scale(1.1);
+}
+
+/* The img style sets the transition property for the image. The img:hover style changes the transform property for the image when it is hovered over. */
+img {
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* The @keyframes bounce animation changes the transform property for the element. The button style applies the bounce animation to the button. */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -257,51 +298,57 @@ button {
   animation: bounce 1s 5;
 }
 
-
-
+/* The @keyframes bounce animation changes the transform property for the element. The button style applies the bounce animation to the button. */
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-20px);
-    }
-    60% {
-      transform: translateY(-10px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  button {
-    animation: bounce 2s infinite;
+  40% {
+    transform: translateY(-20px);
   }
+  60% {
+    transform: translateY(-10px);
+  }
+}
 
+button {
+  animation: bounce 2s infinite;
+}
 
-  .front-end, .back-end {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+/* The front-end and back-end styles set the display, margin, font size, font weight, color, transform, opacity, and transition properties for the front-end and back-end text. The front-end and back-end styles also apply the fadeInUp animation to the front-end and back-end text. The @keyframes fadeInUp animation changes the transform and opacity properties for the element. */
+.front-end,
+.back-end {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  transform: translateY(50px);
+  opacity: 0;
+  transition:
+    transform 15s,
+    opacity 15s;
+}
+
+.front-end {
+  animation: fadeInUp 1s 0.5s infinite forwards;
+}
+
+.back-end {
+  animation: fadeInUp 1s 1s infinite forwards;
+}
+
+@keyframes fadeInUp {
+  from {
     transform: translateY(50px);
     opacity: 0;
-    transition: transform 15s, opacity 15s;
   }
-  
-  .front-end {
-    animation: fadeInUp 1s 0.5s infinite forwards;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .back-end {
-    animation: fadeInUp 1s 1s infinite forwards;
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+}
